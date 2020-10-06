@@ -1,0 +1,321 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+body{
+	flex-direction: row;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+	overflow-x: hidden;
+
+
+}
+div{
+
+	display: flex;
+	flex-direction: row;
+}
+#main_pic{
+	position: absolute;
+	top: -25px;
+	left: 0;
+	right: 0;
+	z-index: 0;
+	width: 100%;
+	min-height: 80vh;
+
+
+}
+.box{
+	display: flex;
+	flex-direction:row; 
+	width: 100vw;
+	position: absolute;
+	height: 693px;
+	top:0;
+	left: 0;
+	right: 0;
+}
+#on_main_pic{
+	display: flex;
+	flex-direction:row; 
+	width: 100vw;
+	position: absolute;
+	height: 693px;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index: -2;
+
+	background-image: url('background.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 80%;
+
+}	
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index:-2;
+}
+#header{
+	display: flex;
+	position: absolute;
+	top: 10px;
+	left: 13px;
+	right: 13px;
+	height: 70px;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	z-index: 1;
+	width: 100%;
+
+
+}
+	
+/*#sidebar{
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	right:0;
+	bottom:0;
+	height: 100%;
+	text-align: left;
+	visibility: hidden;
+}
+#hiden_menu{
+
+}*/
+#menu{
+	min-width: 530px;
+}
+#logo{
+	width: 140px;
+	height: 65px;
+}
+
+
+#menu a{
+	font-size: 13px;
+	color: rgba(255,255,255,.9);;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-family: 'Proxima Nova';
+	font-weight: 600;
+	z-index: 100;
+}
+#menu #home, #menu .button{
+	color: white;
+}
+#menu .button{
+	position: relative;
+
+	border: 2px solid;
+	border-radius: 300px;
+	
+	border-color: white;
+	padding: 13px;
+	padding-right: 17px;
+	padding-left: 17px;
+	z-index: 100;
+}
+#menu .button:hover{
+	background-color: white;
+	color:black;	
+	cursor: pointer;
+	z-index: 100;
+
+}
+ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+
+}
+#menu li{
+	margin-left:20px; 
+}
+.starts{
+	margin: 9px auto;
+}
+
+#start{
+	position: relative;
+	top:35%;
+	height: 30%;
+	width: 100%;
+	height: auto;
+	flex-direction: column;
+	align-content: center;
+	
+}
+#sus{
+	font-family: adobe-garamond-pro, serif;
+	font-weight: 400;
+	font-style: italic;
+	text-transform: none;
+	color: white;
+	font-size: 25px;
+	letter-spacing: 1px;
+
+}
+
+#start_with_you{
+	color: white;
+	font-size: 5vw;
+	font-weight: bold;
+	font-family: 'Proxima Nova', sans-serif;
+	font-style: normal;
+}
+#learn_more, .blue_but{
+	font-family: 'Proxima Nova', sans-serif;
+	text-decoration: none;
+	font-size: 17px;
+	background-color: #36b3a8;
+	color: white;
+	border-radius: 30px;
+	border-width: 0px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 32px;
+	padding-right: 32px;
+	letter-spacing: 2px;
+	cursor: pointer;
+	width: auto;
+}
+
+#learn_more:hover{
+	background: rgba(54,179,168,0.7);
+}
+#content{
+	flex-direction: column;
+	align-content: center;
+	max-width:1020px;
+	width: auto;
+	margin: auto;
+	padding: 96px 32px;
+	line-height: 32px;
+	background-color: white;
+	align-self: center;
+
+}
+.contents{
+	flex-direction: row;
+	justify-content: center;
+	max-width:1020px;
+	width: 90vw;
+	text-align: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+#take_action.contents{
+	flex-wrap: wrap-reverse; 
+}
+#Jared{
+	flex-direction: column;
+	justify-content: center;
+	letter-spacing: 0px;
+}
+h1{
+	font-family: adobe-garamond-pro, serif;
+	font-style: normal;
+	text-transform: none;
+	font-size: 34px;
+	font-weight: 400;
+}
+p{
+	font-family: adobe-garamond-pro, serif;
+	font-style: normal;
+	text-transform: none;
+	font-size: 20px;
+	color: rgba(26,26,26,.7);
+	max-width: 68%;
+	font-weight: 400;
+	align-self: center;
+
+}
+
+#prosto_nado{
+	width: 100vw;
+	position: relative;
+	top: 700px;
+	left: 0;
+	right: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+#Jared #provided{
+	font-family: adobe-garamond-pro, serif;
+	font-style: italic;
+	text-transform: none;
+	font-size: 20px;
+	color: #5e5e5e;
+	margin: 0px;
+}
+#provided a{
+	text-decoration: none;
+	color: #3d9991;
+	opacity: 1;
+
+}
+.pics{
+	width: 100%;
+}
+.pic_over{
+	min-width: 400px;
+	max-width: 49%;
+}
+.with_pic{
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 90%;
+
+}
+.with_pic_over{
+	flex-direction: row;
+	justify-content: center; 
+	min-width:400px; 
+	max-width:49%;
+	padding-left: 30px;
+	padding-right: 30px;  
+}
+.contents:not(:first-child){
+	margin-top: 110px;
+}
+.contents .blue_but{
+	align-self: center;
+	width: auto;
+	font-weight: 400;
+	font-size: inherit !important;
+	padding: 8px 20px; 
+}
+.mini_h{
+	font-family: 'Proxima Nova', serif;
+	color:#bdbdbd;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 4px;
+}
+.mini_text{
+	font-size: 24px;
+	font-weight: 600px;
+	max-width: 450px;
+}
+
+
+	
