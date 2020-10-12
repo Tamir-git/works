@@ -28,7 +28,7 @@ div{
 	right: 0;
 	z-index: 0;
 	width: 100%;
-	min-height: 80vh;
+	min-height: 700px;
 
 
 }
@@ -41,6 +41,7 @@ div{
 	top:0;
 	left: 0;
 	right: 0;
+	z-index: 0;
 }
 #on_main_pic{
 	display: flex;
@@ -51,13 +52,14 @@ div{
 	top:0;
 	left: 0;
 	right: 0;
-	z-index: -2;
+	z-index: -1;
 
 	background-image: url('background.jpeg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	min-height: 80%;
+	min-height: 700px;
 
 }	
 #overlay{
@@ -67,7 +69,7 @@ div{
 	right: 0;
 	height: 100%;
 	background-color: rgba(0,0,0,0.3);
-	z-index:-2;
+	z-index:-1;
 }
 #header{
 	display: flex;
@@ -80,7 +82,6 @@ div{
 	flex-wrap: nowrap;
 	align-items: center;
 	z-index: 1;
-	width: 100%;
 
 
 }
@@ -103,7 +104,11 @@ div{
 }
 #logo{
 	width: 140px;
-	height: 65px;
+}
+@media(max-device-with: 500){
+	#logo{
+		width: 20vw;
+	}
 }
 
 
@@ -129,13 +134,13 @@ div{
 	padding: 13px;
 	padding-right: 17px;
 	padding-left: 17px;
-	z-index: 100;
+	z-index: 1;
 }
 #menu .button:hover{
 	background-color: white;
 	color:black;	
 	cursor: pointer;
-	z-index: 100;
+	z-index: 1;
 
 }
 ul{
@@ -160,7 +165,7 @@ ul{
 	height: auto;
 	flex-direction: column;
 	align-content: center;
-	
+	z-index: 1;
 }
 #sus{
 	font-family: adobe-garamond-pro, serif;
@@ -195,18 +200,22 @@ ul{
 	letter-spacing: 2px;
 	cursor: pointer;
 	width: auto;
+	z-index: 1;
 }
 
 #learn_more:hover{
-	background: rgba(54,179,168,0.7);
+	background-color: rgba(54,179,168,0.3);
+}
+.blue_but:hover{
+	background-color: rgba(54,179,168,0.7);
 }
 #content{
 	flex-direction: column;
 	align-content: center;
-	max-width:1020px;
+	max-width:1200px;
 	width: auto;
-	margin: auto;
-	padding: 96px 32px;
+	margin: 0;
+	padding: 96px 0;
 	line-height: 32px;
 	background-color: white;
 	align-self: center;
@@ -277,29 +286,32 @@ p{
 }
 .pic_over{
 	min-width: 400px;
-	max-width: 49%;
+	max-width: 45%;
 }
 .with_pic{
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
 	width: 90%;
+	margin-top: 40px;
 
 }
 .with_pic_over{
 	flex-direction: row;
 	justify-content: center; 
 	min-width:400px; 
-	max-width:49%;
+	max-width: 49%;
 	padding-left: 30px;
 	padding-right: 30px;  
 }
+@media screen and (max-device-width: 900px) {
+    .with_pic_over, .pic_over {min-width: 600px;}
+   }
 .contents:not(:first-child){
 	margin-top: 110px;
 }
 .contents .blue_but{
 	align-self: center;
-	width: auto;
 	font-weight: 400;
 	font-size: inherit !important;
 	padding: 8px 20px; 
@@ -316,6 +328,30 @@ p{
 	font-weight: 600px;
 	max-width: 450px;
 }
+#subscribe_inner{
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	align-self: center;
 
+}
+#subcribe{
+	padding: auto;
+	min-width: 500px;
+	max-width:1020px;
+	align-self: center;
+	text-align: center;
+	position: relative;
+	left: 45vw;
+
+}
+#subscribe_h{
+	align-self: center;
+	text-align: center;
+}
 
 	
